@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>广告位管理</title>
+	<link rel="stylesheet" href="css/ad.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/ad.js"></script>
+</head>
+<body>
+	<div class="ad-list">
+		<div class="title">广告位管理</div>
+		<ul class="ad04">
+			<li>
+				<span>广告位：</span>
+				<select name="" id="">
+					<option value="">团主站首页轮播</option>
+					<option value="">主app电影频道banner位</option>
+					<option value="">团购首页右侧热门推荐</option>
+					<option value="">主app团首页热门推荐</option>
+				</select>
+			</li>
+			<li>
+				<span>城市：</span>
+				<select name="" id="">
+					<option value="">上海</option>
+					<option value="">北京</option>
+					<option value="">天津</option>
+					<option value="">深圳</option>
+				</select>
+			</li>
+			<li>
+				<span>开始时间：</span>
+				<input type="text" value="2014-01-01 00:00:00">
+			</li>
+			<li>
+				<span>结束时间：</span>
+				<input type="text" value="2014-01-01 00:00:00">
+			</li>
+			<li>
+				<span>状态：</span>
+				<select name="" id="">
+					<option value="">全部</option>
+					<option value="">待执行</option>
+					<option value="">执行中</option>
+					<option value="">已过期</option>
+				</select>
+			</li>
+		</ul>
+		<div class="ad-manage-operation">
+			<input type="checkbox"><span>清除缓存</span>
+			<button class="ad-manage-select">搜索</button>
+		</div>
+		<table class="ad-manage-table table">
+			<caption>找到<span>"团主站首页轮播"</span>相关记录<span>56</span>个</caption>
+			<thead>
+				<tr>
+					<th>城市</th>
+					<th>活动名称</th>
+					<th>类型</th>
+					<th>状态</th>
+					<th>开始时间</th>
+					<th>结束时间</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="executing">
+					<td>乌鲁木齐</td>
+					<td>西贝西北餐厅</td>
+					<td>活动</td>
+					<td>执行中</td>
+					<td>2014-04-12 00:00:00</td>
+					<td>2014-04-12 00:00:00</td>
+					<td><a href="">前置</a><a href="">编辑</a><a href="">删除</a></td>
+				</tr>
+				<tr class="executing">
+					<td>乌鲁木齐</td>
+					<td>豪华来牛肉餐厅</td>
+					<td>deal</td>
+					<td>执行中</td>
+					<td>2014-04-12 00:00:00</td>
+					<td>2014-04-12 00:00:00</td>
+					<td><a href="">前置</a><a href=""></a><a href="">删除</a></td>
+				</tr>
+				<tr>
+					<td>乌鲁木齐</td>
+					<td>豪华来牛肉餐厅</td>
+					<td>deal</td>
+					<td>待执行</td>
+					<td>2014-04-12 00:00:00</td>
+					<td>2014-04-12 00:00:00</td>
+					<td><a href="">前置</a><a href="">编辑</a><a href="">删除</a></td>
+				</tr>
+				<tr class="overdue">
+					<td>乌鲁木齐</td>
+					<td>豪华来牛肉餐厅</td>
+					<td>deal</td>
+					<td>已过期</td>
+					<td>2014-04-12 00:00:00</td>
+					<td>2014-04-12 00:00:00</td>
+					<td></td>
+				</tr>
+				<tr class="overdue">
+					<td>乌鲁木齐</td>
+					<td>豪华来牛肉餐厅</td>
+					<td>deal</td>
+					<td>已过期</td>
+					<td>2014-04-12 00:00:00</td>
+					<td>2014-04-12 00:00:00</td>
+					<td></td>
+				</tr>
+				<tr class="overdue">
+					<td>乌鲁木齐</td>
+					<td>豪华来牛肉餐厅</td>
+					<td>deal</td>
+					<td>已过期</td>
+					<td>2014-04-12 00:00:00</td>
+					<td>2014-04-12 00:00:00</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>  
+</html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>广告位列表</title>
+	<link rel="stylesheet" href="css/ad.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/ad.js"></script>
+</head>
+<body>
+	<div class="ad-list">
+        <div class="title02">广告位列表<span> > 团购首页右侧热门推荐</span>
+        <input type="hidden" name="positionName" value="positionName"></div>
+        <div class="tab-content">
+          <ul>
+            <li class="active" id="0">团单投放</li>
+            <li id="1">活动投放</li>
+          </ul>
+          <div class="list-content" id="list-content1">
+            <div class="edit-message">
+              <div class="edit-message-title">编辑投放信息</div>
+              <div class="edit-message-detail">
+                <span class="edit-message-detail1">团单ID：2094698</span>
+                <span class="edit-message-detail2">商户名称：汉秦东南亚风味餐厅</span>
+                <span class="edit-message-detail3">团单链接：<a href="#">t.dianping.com/deal/2094698</a></span>
+                <span class="edit-message-detail4"><a href="">重新搜索团单</a></span>
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>城市</th>
+                  <th>开始时间</th>
+                  <th>结束时间</th>
+                  <th>状态</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <td colspan="5"><img class="add-pic" src="images/add-pic.png" alt=""><a class="add-edit-list" href="">增加一条编辑</a></td>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr publishId="1">
+                  <td cityId="1">上海</td>
+                  <td>2014-01-01 12:00:00</td>
+                  <td>2014-01-01 12:00:00</td>
+                  <td>执行中，置顶</td>
+                  <td><a href="" class="delete-tr">删除</a></td>
+                </tr>
+                <tr publishId="2">
+                  <td cityId="1">上海</td>
+                  <td>2014-01-01 12:00:00</td>
+                  <td>2014-01-01 12:00:00</td>
+                  <td>待执行</td>
+                  <td><a href="" class="delete-tr">删除</a></td>
+                </tr>
+               <!--  <tr class="editable-tr" id="3">
+                 <td>
+                   <select name="" id="">
+                     <option value="">全部</option>
+                     <option value="">上海</option>
+                     <option value="">北京</option>
+                     <option value="">深圳</option>
+                     <option value="">广州</option>
+                   </select>
+                 </td>
+                 <td>
+                   <input type="text" class="defaultInput" value="yyyy-mm-dd 00:00:00">
+                 </td>
+                 <td>
+                   <input type="text" class="defaultInput" value="yyyy-mm-dd 00:00:00">
+                 </td>
+                 <td>
+                   <input type="checkbox"><span class="put-top">置顶</span>
+                 </td>
+                 <td><a href="" class="delete-tr">删除</a></td>
+               </tr> -->
+              </tbody>
+            </table>
+            <div class="footer-operation">
+              <button class="button1">预览</button>
+              <button class="button2" id="saveModifiedTr">保存</button>
+              <a class="return" href="">返回</a>
+            </div>
+          </div>
+          <div class="list-content" id="list-content2">
+            <label for="name">活动名称：</label>
+            <input type="text" id="name"><br><span class="red-hint">请输入活动名称</span>
+            <label for="city">活动城市：</label>
+            <input type="text" id="city"><br>
+            <label for="time">活动时间：</label>
+            <input type="text" class="time defaultInput" id="time" value="YYYY-MM-DD 00:00:00"> 至
+            <input type="text" class="time defaultInput" value="YYYY-MM-DD 00:00:00"><br>
+            <label for="main-title">主标题：</label>
+            <input type="text" id="main-title" class="defaultInput" value="最多10个字"><br>
+            <label for="sec-title">副标题：</label>
+            <input type="text" id="sec-title" class="defaultInput" value="最多10个字"><br>
+            <label for="link">活动链接：</label>
+            <input type="text" id="link"><br>
+            <label for="pic">上传图片：</label>
+            <input type="text" id="pic">
+            <button class="choose-pic">选择图片</button>
+            <span>图片尺寸不超过160*100像素，大小不超过1MB</span>
+            <br>
+            <input type="checkbox" class="checkbox">置顶
+            <div class="footer-operation">
+              <button class="button1">预览</button>
+              <button class="button2">保存</button>
+              <a class="return" href="">返回</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pop-box">
+        <div class="hint-title">
+          <span class="hint-title-text">提示</span>
+          <span class="close">&times;</span>
+        </div>
+        <div class="hint-body">
+          <div class="hint-content">您的修改尚未保存，是否保存后离开？</div>
+          <div class="hint-operation">
+            <button class="button2" id="sure">确定</button>
+            <button class="button1 close-cancel">取消</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pop-box1">
+        <div class="hint-title">
+          <span class="hint-title-text">提示</span>
+          <span class="close">&times;</span>
+        </div>
+        <div class="hint-body">
+          <div class="hint-content"><img src="images/success.png" alt="">活动投放保存成功！<span>你可在<a href="">广告位管理</a>里搜索并修改！</span></div>
+          <div class="hint-detail">
+            <p><span>活动名称：</span><span>春游</span></p>
+            <p><span>活动城市：</span><span>上海、苏州、杭州</span></p>
+            <p><span>活动时间：</span><span>2014-01-01 00:00:00 至 2014-01-01 00:00:00</span></p>
+            <p><span>主标题：</span><span>春游春游</span></p>
+            <p><span>副标题：</span><span>春游春游</span></p>
+            <p><span>活动链接：</span><span>t.dianping.com/deal/20149389</span></p>
+            <p><span>上传图片：</span><span>t.dianping.com/deal/20149389.png</span></p>
+          </div>
+          <div class="hint-operation">
+            <button class="button2">确定</button>
+          </div>
+        </div>
+      </div>
+      <div id="fullBg"></div>
+</body>
+</html>
